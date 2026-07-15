@@ -19,98 +19,101 @@ class _Formulario extends State<Formulario> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Form(
-        key: _formkey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            TextFormField(
-              controller: _nomeController,
-              decoration: const InputDecoration(
-                labelText: 'Nome',
-                border: OutlineInputBorder(),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Formulário Vários Inputs')),
+      body: SingleChildScrollView(
+        child: Form(
+          key: _formkey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              TextFormField(
+                controller: _nomeController,
+                decoration: const InputDecoration(
+                  labelText: 'Nome',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.name,
               ),
-              keyboardType: TextInputType.name,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            TextFormField(
-              controller: _numeroController,
-              decoration: const InputDecoration(
-                labelText: 'Número',
-                border: OutlineInputBorder(),
+              TextFormField(
+                controller: _numeroController,
+                decoration: const InputDecoration(
+                  labelText: 'Número',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.number,
               ),
-              keyboardType: TextInputType.number,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            TextFormField(
-              controller: _emailController,
-              decoration: const InputDecoration(
-                labelText: 'Email',
-                border: OutlineInputBorder(),
+              TextFormField(
+                controller: _emailController,
+                decoration: const InputDecoration(
+                  labelText: 'Email',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.emailAddress,
               ),
-              keyboardType: TextInputType.emailAddress,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            TextFormField(
-              controller: _foneController,
-              decoration: const InputDecoration(
-                labelText: 'Telefone',
-                border: OutlineInputBorder(),
+              TextFormField(
+                controller: _foneController,
+                decoration: const InputDecoration(
+                  labelText: 'Telefone',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.phone,
               ),
-              keyboardType: TextInputType.phone,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            TextFormField(
-              controller: _senhaController,
-              decoration: const InputDecoration(
-                labelText: 'Senha',
-                border: OutlineInputBorder(),
+              TextFormField(
+                controller: _senhaController,
+                decoration: const InputDecoration(
+                  labelText: 'Senha',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
               ),
-              keyboardType: TextInputType.visiblePassword,
-              obscureText: true,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            TextFormField(
-              controller: _urlController,
-              decoration: const InputDecoration(
-                labelText: 'URL',
-                border: OutlineInputBorder(),
+              TextFormField(
+                controller: _urlController,
+                decoration: const InputDecoration(
+                  labelText: 'URL',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.url,
               ),
-              keyboardType: TextInputType.url,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            TextFormField(
-              controller: _dataController,
-              decoration: const InputDecoration(
-                prefixIcon: Icon(Icons.calendar_today),
-                labelText: 'Data',
-                border: OutlineInputBorder(),
+              TextFormField(
+                controller: _dataController,
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(Icons.calendar_today),
+                  labelText: 'Data',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.datetime,
               ),
-              keyboardType: TextInputType.datetime,
-            ),
 
-            SizedBox(height: 8),
+              SizedBox(height: 8),
 
-            ElevatedButton(
-              onPressed: () {
-                return;
-              },
-              child: const Text('Enviar'),
-            ),
-          ],
+              ElevatedButton(
+                onPressed: () {
+                  return;
+                },
+                child: const Text('Enviar'),
+              ),
+            ],
+          ),
         ),
       ),
     );
