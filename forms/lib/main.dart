@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forms/formulario_email_restricoes.dart';
 import 'package:forms/formulario_varios_inputs.dart';
 import 'package:forms/formulario_selecoes.dart';
 import 'package:forms/fomulario_nickname.dart';
@@ -51,6 +52,17 @@ class MainApp extends StatelessWidget {
                         );
                       },
                       child: Text('Formulário Nickname'),
+                    ),
+
+                    SizedBox(height: 8,),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          novoContexto,
+                          MaterialPageRoute(builder: (context) => FormularioEmailRestricoes()),
+                        );
+                      },
+                      child: Text('Formulário Email Restrições'),
                     ),
                   ],
                 );
