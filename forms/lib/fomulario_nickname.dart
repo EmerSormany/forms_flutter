@@ -32,7 +32,15 @@ class _FomularioNickname extends State<FomularioNickname> {
                 FilteringTextInputFormatter.allow(RegExp(r'^[a-zA-Z0-9_.-]+$')),
               ],
             ),
-            SizedBox(height: 8,)
+            
+            SizedBox(height: 8,),
+
+            ElevatedButton(
+              onPressed: () {
+                return;
+              },
+              child: const Text('Enviar'),
+            ),
           ],
         ),
       ),
