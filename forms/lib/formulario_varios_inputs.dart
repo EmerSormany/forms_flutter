@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Formulario extends StatefulWidget {
-  const Formulario({super.key});
+class FormularioVariosInputs extends StatefulWidget {
+  const FormularioVariosInputs({super.key});
 
   @override
-  State<Formulario> createState() => _Formulario();
+  State<FormularioVariosInputs> createState() => _FormularioVariosInputs();
 }
 
-class _Formulario extends State<Formulario> {
+class _FormularioVariosInputs extends State<FormularioVariosInputs> {
   final _formkey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _senhaController = TextEditingController();

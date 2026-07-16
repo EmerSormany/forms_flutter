@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:forms/formulario1.dart';
-import 'package:forms/formulario2.dart';
-import 'package:forms/formulario3.dart';
+import 'package:forms/formulario_varios_inputs.dart';
+import 'package:forms/formulario_selecoes.dart';
+import 'package:forms/fomulario_nickname.dart';
 
 void main() {
   runApp(const MainApp());
@@ -26,7 +26,7 @@ class MainApp extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           novoContexto,
-                          MaterialPageRoute(builder: (context) => Formulario()),
+                          MaterialPageRoute(builder: (context) => FormularioVariosInputs()),
                         );
                       },
                       child: Text('Formulário Varios Inputs'),

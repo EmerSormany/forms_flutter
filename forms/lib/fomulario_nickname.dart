@@ -24,7 +24,7 @@ class _FomularioNickname extends State<FomularioNickname> {
             TextFormField(
               decoration: InputDecoration(
                 labelText: 'Nickname',
-                hintText: 'seuApelido', // terminar
+                hintText: 'seuApelido',
                 border: OutlineInputBorder(),
               ),
 
